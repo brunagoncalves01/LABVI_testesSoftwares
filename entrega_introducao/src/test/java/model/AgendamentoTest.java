@@ -29,19 +29,18 @@ public class AgendamentoTest{
 	@Test
 	public void retornaTempoParaEventoTest() {
 		
-		 evento.setId(02);
+		 evento.setId(01);
 	     evento.setNome("Bruna");
 	     evento.setDataInicial("09/18/2020 01:00");
 	     evento.setDataFinal("09/19/2020 01:00");
 		
 		Agendamento agendamento = new Agenda();
 		agendamento.agendar(evento);
-		int id = 02;
+		int id = 01;
 		//String nome = "Bruna";
 		//String resultado = agendamento.retornaTempoParaEvento(nome);
 		String resultado = agendamento.retornaTempoParaEvento(id);
-		assertEquals("2 24 1440", resultado);
-		//assertEquals("1 24 1440", resultado);
+		assertEquals("1 24 1440", resultado);
 	}
 		
 

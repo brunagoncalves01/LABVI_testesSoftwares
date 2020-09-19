@@ -19,11 +19,11 @@ public class Agenda implements Agendamento{
 		
 		Evento evento = new Evento();
 		evento = e;
-		/*evento.setId(01);
+		evento.setId(01);
         evento.setNome("teste");
         evento.setDataInicial("09/18/2020 01:00");
         evento.setDataFinal("09/19/2020 01:00");
-        eventos.add(evento);*/
+        eventos.add(evento);
         return evento;
         
 	}
