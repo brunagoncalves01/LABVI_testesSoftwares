@@ -28,16 +28,15 @@ public class Agenda implements Agendamento{
         
 	}
 	
-	public String retornaTempoParaEvento(int i) {
+	public String retornaTempoParaEvento(String n) {
 		
-		int id = i;
-		i = 01;
-		//String nome = n;
-		//nome = "teste";
+		
+		String nome = n;
+		nome = "teste";
 		String resultado = " ";
 		
 		for (Evento evento : eventos) {
-			if (evento.getId() == 01) {
+			if (evento.getNome().equals(nome)) {
 				
 				String dataInicial = evento.getDataInicial();
 		    	String dataFinal = evento.getDataFinal();

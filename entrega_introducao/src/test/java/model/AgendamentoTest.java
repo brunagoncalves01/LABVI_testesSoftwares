@@ -37,9 +37,8 @@ public class AgendamentoTest{
 		Agendamento agendamento = new Agenda();
 		agendamento.agendar(evento);
 		int id = 01;
-		//String nome = "Bruna";
-		//String resultado = agendamento.retornaTempoParaEvento(nome);
-		String resultado = agendamento.retornaTempoParaEvento(id);
+		String nome = "Bruna";
+		String resultado = agendamento.retornaTempoParaEvento(nome);
 		assertEquals("1 24 1440", resultado);
 	}
 		

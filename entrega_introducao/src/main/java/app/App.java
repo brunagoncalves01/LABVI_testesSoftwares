@@ -16,10 +16,9 @@ public class App {
         
         Evento evento = new Evento();
         Agenda agenda = new Agenda();
-        //String nome = "";
-        int id = 0;
+        String nome = "";
+        
         agenda.agendar(evento);
-        //agenda.retornaTempoParaEvento(nome);
-        agenda.retornaTempoParaEvento(id);
+        agenda.retornaTempoParaEvento(nome);
     }
 }
