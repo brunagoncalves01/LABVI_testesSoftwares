@@ -116,9 +116,18 @@ public class AgendamentoTest{
 		//CTC2: dias > 1 = VÁLIDO; 
 	
 	@Test
+	public void retornaTempoParaEventoTestCTC1() {
+		
+		Agendamento agendamento = new Agenda();
+		agendamento.agendar(evento);
+		String nome = "Bruna";
+		String resultado = agendamento.retornaTempoParaEvento(nome);
+		assertEquals("0 24 1440", resultado);
+	}
+	
+	@Test
 	public void retornaTempoParaEventoTestCTC2() {
 		
-	
 		Agendamento agendamento = new Agenda();
 		agendamento.agendar(evento);
 		int id = 01;
@@ -126,16 +135,5 @@ public class AgendamentoTest{
 		String resultado = agendamento.retornaTempoParaEvento(nome);
 		assertEquals("1 24 1440", resultado);
 	}
-	
-	@Test
-	public void retornaTempoParaEventoTestCTC1() {
-		
-		Agendamento agendamento = new Agenda();
-		agendamento.agendar(evento);
-		String nome = "Bruna";
-		String resultado = agendamento.retornaTempoParaEvento(nome);
-		assertEquals("1 24 1440", resultado);
-	}
-		
 
 }
