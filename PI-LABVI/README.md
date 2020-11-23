@@ -1,6 +1,6 @@
 # labVI
 
-Tema: Agenda
+Tema: Vai de Van
 
 Descrição: Testes realizados para o Projeto Integrador do Grupo 2: Vai de Van.
 
